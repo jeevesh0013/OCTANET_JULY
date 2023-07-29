@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details || safar.com</title>
+    <link rel="stylesheet" href="web2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+   
+        
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/SAFAR-1-removebg-preview.png" width="130px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    <li><a href="/aboutus.html">contact</a></li>
+                    <li><a href="account.html">account</a></li>
+                </ul>
+            </nav>
+            <img src="/shopping-bag.png" width="30px" height="30px">
+            <img src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" class="menu-icon" onclick="menutoggle()">
+            
+        </div>  
+</div>
+
+<!-- -----------cart item ------------- -->
+<div class="small-container cartpage">
+    <table>
+        <tr>
+            <th>
+                <div class="cart-info">
+                    <img src="/cycle01.1.png" alt="">
+                    <div>
+                        <p>Leader TORFIN MTB 26T Mountain Bicycle</p>
+                        <small>Price:$50.00</small>
+                        <a href="">Remove</a>
+                        
+                    </div>
+                </div>
+            </th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>Product Name</td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+
+        </tr>
+    </table>
+</div>
+
+
+    <!-- ------footer------ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App </h3>
+                <p>Download App  For Android and ios Mobile Phones</p>
+                <div class="app-logo">
+                    <img src="https://brandlogos.net/wp-content/uploads/2015/09/download-on-the-app-store-badge.png" alt="">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer-col-2">
+               <img src="/SAFAR-1.jpg" alt="">
+                <p>Our Purpose Is To Provide a Pleasure to our customers and providing  Benefits of sports accesseries at your door step. </p>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful  Links </h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog posts</li>
+                    <li>Return Policy</li>
+                    <li>suscribtion</li>
+                </ul>
+                 
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+                 
+             </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023-Safar</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(  MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+
+    
+</body>
+</html>

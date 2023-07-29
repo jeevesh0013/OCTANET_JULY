@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product details || safar.com</title>
+    <link rel="stylesheet" href="web2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+   
+        
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/SAFAR-1-removebg-preview.png" width="130px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="/aboutus.html">About</a></li>
+                    <li><a href="/aboutus.html">contact</a></li>
+                    <li><a href="account.html">account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="/shopping-bag.png" width="30px" height="30px"></a>
+            <img src="https://www.freeiconspng.com/thumbs/menu-icon/menu-icon-24.png" class="menu-icon" onclick="menutoggle()">
+            
+        </div>  
+</div>
+<!-- --------accountpage---------- -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="/bicycle-png-45208.png" alt="">
+            </div>
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()"> Register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form action="" id="loginform">
+                        <input type="text" placeholder="username">
+                        <input type="password" name="" id="" placeholder="password">
+                        <button type="submit" class="btn
+                        ">Login</button>
+                        <a href="">forget Password</a>
+
+                    </form>
+
+                    <form action="" id="registrationform">
+                        <input type="text" placeholder="username">
+                        <input type="email" name="" id="" placeholder="email">
+                        <input type="password" name="" id="" placeholder="password">
+                        <button type="submit" class="btn
+                        ">Register</button>
+                       
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- ------footer------ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App </h3>
+                <p>Download App  For Android and ios Mobile Phones</p>
+                <div class="app-logo">
+                    <img src="https://brandlogos.net/wp-content/uploads/2015/09/download-on-the-app-store-badge.png" alt="">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer-col-2">
+               <img src="/SAFAR-1.jpg" alt="">
+                <p>Our Purpose Is To Provide a Pleasure to our customers and providing  Benefits of sports accesseries at your door step. </p>
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful  Links </h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog posts</li>
+                    <li>Return Policy</li>
+                    <li>suscribtion</li>
+                </ul>
+                 
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+                 
+             </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023-Safar</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(  MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+<!-- ----------js for toggle form----------- -->
+<script>
+    var loginForm=document.getElementById("loginform");
+    var regForm=document.getElementById("registrationform");
+    var Indicator=document.getElementById("indicator");
+    function register(){
+        regForm.style.transform="translateX(0px)";
+        loginForm.style.transform="translateX(0px)";
+        Indicator.style.transform="translateX(100px)";
+    }
+    function login(){
+        regForm.style.transform="translateX(300px)";
+        loginForm.style.transform="translateX(300px)";
+        Indicator.style.transform="translateX(0px)";
+    }
+
+</script>
+
+    
+</body>
+</html>
